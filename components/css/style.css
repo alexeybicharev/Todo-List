@@ -1,0 +1,80 @@
+[v-cloak] {
+    display: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to left, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.todoApp {
+    background: #f7f7f7;
+    width: 50%;
+    height: auto;
+    margin: 200px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 768px) {
+    .todoApp {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+.header {
+    background: #2C7AAD;
+    color: whitesmoke;
+    padding: 10px 10px;
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+}
+.fa-plus {
+    float: right;
+    margin: 2px 5px;
+    cursor: pointer;
+}
+.addItem {
+    width: 100%;
+    padding: 13px 13px 13px 13px;
+    box-sizing: border-box;
+    border: 3px solid rgba(0, 0, 0, 0);
+    background-color: #F7F7F7;
+}
+.addItem:focus {
+    background: #fff;
+    outline: none;
+    border: 2px solid #f7f7f7;
+}
+ul {
+    list-style: none;
+}
+.item {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    height: auto;
+    width: auto;
+    line-height: 53px;
+    color: #666;
+    background: white;
+}
+.item:nth-child(2n) {
+    background: #e7e6e6;
+}
+.todoText {
+    padding-top: 2px;
+    cursor: pointer;
+}
+.fa-trash {
+    color: #e74c3c;
+    display: inline block;
+    margin: 20px;
+    line-height: 50px;
+    cursor: pointer;
+}
+.completed{
+    color: gray;
+    text-decoration: line-through;
+}
